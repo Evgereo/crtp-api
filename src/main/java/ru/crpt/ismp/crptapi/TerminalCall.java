@@ -6,7 +6,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import java.time.Duration;
 
-public class Client {
+public class TerminalCall {
     public static void main(String[] args) throws JsonProcessingException {
         CrptApi crptApi = new CrptApi(new CrptApi.RequestLimiter(Duration.ofSeconds(10), 2));
         ObjectMapper mapper = new ObjectMapper();
